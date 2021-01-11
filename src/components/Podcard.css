@@ -1,0 +1,76 @@
+.podcard-container {
+  width: 100%;
+}
+
+.podcard {
+  margin: 0 auto;
+  width: 90%;
+  height: 267px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+}
+
+.image-container {
+  width: 25%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.podcard-content {
+  border: 2px solid #e2514c;
+  width: 100%;
+  padding: 9px 20px 30px 18px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: none;
+  background-color: lightgray;
+}
+
+.podcard-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightsalmon;
+}
+
+.podcard-header-container {
+  display: flex;
+  background-color: limegreen;
+}
+
+button {
+  background-color: #e2514c;
+  color: white;
+  width: 200px;
+  height: 200px;
+  transition: all 1000ms ease-out 1000ms;
+}
+
+button:hover {
+  background-color: grey;
+  color: yellow;
+  transition: all 1000ms ease-in 1000ms;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: flex;
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+  transition-delay: 50ms;
+  transform-origin: top center;
+}
+
+.show:hover {
+  transform: scale(1, 1);
+}
